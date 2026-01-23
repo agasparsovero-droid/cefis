@@ -16,5 +16,6 @@ class Tipo extends Model
     protected $hidden = [
         'id'
     ];
+
     
 }
