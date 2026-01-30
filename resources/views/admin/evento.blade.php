@@ -21,9 +21,14 @@
 <h3 class="text-lg uppercase font-bold p-3 bg-gray-200">
    Organizadores
     </h3>
-    <div class="text-justify"> 
-    <a  class=" inline-block p-3 bg-blue-500 text-white" href="{{route('add-organizador',['evento_id' => $evento_id]) }}">
+    <div class="flex item-center justify-evenly"> 
+    <a  class=" inline-block p-3 bg-blue-500 text-white"
+     href="{{route('add-organizador',['evento_id' => $evento_id]) }}">
         Agregar
+    </a>
+    <a  class=" inline-block p-3 bg-amber-500 text-gray-900 font-semibold"
+     href="{{ route('exportar-organizadores',['evento_id' => $evento_id]) }}">
+        Exportar
     </a>
     </div>
     <ul class="flex flex-col items-stretch">
